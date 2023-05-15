@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+.navbar #page-logo {
+  align-items: flex-start;
+  height: 35px;
+}
+.navbar #navbar-links {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+.navbar #navbar-links li {
+  padding: 0px 0px 0px 27px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.navbar #navbar-links li:hover {
+  color: hsl(5, 85%, 63%);
+}/*# sourceMappingURL=navbarStyles.css.map */

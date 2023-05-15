@@ -1,0 +1,41 @@
+@use '../variables' as v;
+
+.card{
+    display: flex;
+    flex-direction: row;
+    width: 310px;
+    height: 100px;
+    text-align: left;
+
+    .card-image{
+        height: 100%;
+        padding-right: 10px;
+    }
+
+    #info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    h2, h4, p{
+        margin: 0;
+    }
+
+    h2{
+        color: v.$Grayish-blue;
+    }
+
+    h4{
+        cursor: pointer;
+
+        &:hover{
+            color: v.$Soft-red;
+        }
+    }
+
+    @media (max-width: v.$size-screen) {
+        width: 350px;
+        padding-bottom: 15px;
+    }
+}

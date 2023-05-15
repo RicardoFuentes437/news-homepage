@@ -1,0 +1,28 @@
+.bottom-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 10px;
+}
+.bottom-section p {
+  font-size: 15px;
+  color: hsl(236, 13%, 42%);
+}
+@media (max-width: 960px) {
+  .bottom-section {
+    display: grid;
+    grid-template-areas: "one two" "three three";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .bottom-section #card-01 {
+    grid-area: "one";
+  }
+  .bottom-section #card-02 {
+    grid-area: "two";
+  }
+  .bottom-section #card-03 {
+    grid-area: "three";
+  }
+}/*# sourceMappingURL=bottomSectionStyles.css.map */

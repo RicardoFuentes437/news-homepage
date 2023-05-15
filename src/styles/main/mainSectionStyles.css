@@ -1,0 +1,108 @@
+.main-section {
+  display: flex;
+  flex-direction: row;
+}
+.main-section p {
+  font-size: 15px;
+  color: hsl(236, 13%, 42%);
+}
+.main-section #left-section {
+  width: 65%;
+  text-align: start;
+}
+.main-section #left-section #web-3-desktop {
+  width: 100%;
+}
+.main-section #left-section #bottom-section {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.main-section #left-section #bottom-section #bottom-title {
+  grid-column: 1;
+}
+.main-section #left-section #bottom-section #bottom-title h1 {
+  font-weight: 900;
+  font-size: 38px;
+  margin-top: 10px;
+}
+.main-section #left-section #bottom-section #bottom-description {
+  grid-column: 2;
+  padding-left: 20px;
+}
+.main-section #left-section #bottom-section #bottom-description button {
+  background-color: hsl(5, 85%, 63%);
+  color: hsl(36, 100%, 99%);
+  height: 40px;
+  width: 180px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
+.main-section #left-section #bottom-section #bottom-description button:hover {
+  background-color: hsl(240, 100%, 5%);
+}
+.main-section #right-section {
+  width: 35%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.main-section #right-section .new-articles {
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+  width: 280px;
+  height: 395px;
+  text-align: start;
+  padding: 5px 15px 5px 15px;
+}
+.main-section #right-section .new-articles p {
+  font-weight: 400;
+  color: hsl(233, 8%, 79%);
+}
+.main-section #right-section .new-articles h4 {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.main-section #right-section .new-articles h4:hover {
+  color: hsl(35, 77%, 62%);
+}
+.main-section #right-section .new-articles #new {
+  color: hsl(35, 77%, 62%);
+}
+.main-section #right-section .new-articles .line {
+  color: hsl(233, 8%, 79%);
+}
+@media (max-width: 960px) {
+  .main-section {
+    flex-direction: column;
+  }
+  .main-section #left-section {
+    width: 100%;
+  }
+  .main-section #left-section #bottom-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-section #left-section #bottom-section #bottom-title {
+    margin: 0;
+    padding-top: 15px;
+    line-height: 0;
+  }
+  .main-section #left-section #bottom-section #bottom-description {
+    margin: 0;
+    padding: 0;
+  }
+  .main-section #right-section {
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px 0px 30px 0px;
+  }
+  .main-section #right-section .new-articles {
+    width: 100%;
+    height: 320px;
+  }
+}/*# sourceMappingURL=mainSectionStyles.css.map */

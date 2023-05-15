@@ -1,0 +1,36 @@
+@use '../variables' as v;
+
+.bottom-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 10px;
+
+    p{
+        font-size: 15px;
+        color: v.$Dark-grayish-blue;
+    }
+
+    @media (max-width: v.$size-screen) {
+        display: grid;
+        grid-template-areas: 
+            "one two"
+            "three three";
+
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+
+        #card-01{
+            grid-area: "one";
+        }
+
+        #card-02{
+            grid-area: "two";
+        }
+
+        #card-03{
+            grid-area: "three";
+        }
+    }
+}
