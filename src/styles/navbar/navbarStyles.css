@@ -24,6 +24,9 @@
 .navbar #navbar-links li:hover {
   color: hsl(5, 85%, 63%);
 }
+.navbar .drawer {
+  background-color: white;
+}
 .navbar .drawer .icon-menu {
   width: auto;
   height: auto;
