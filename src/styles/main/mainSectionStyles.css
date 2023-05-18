@@ -13,6 +13,10 @@
 .main-section #left-section #web-3-desktop {
   width: 100%;
 }
+.main-section #left-section #web-3-mobile {
+  width: 100%;
+  display: none;
+}
 .main-section #left-section #bottom-section {
   display: grid;
   grid-template-columns: 40% 60%;
@@ -75,7 +79,7 @@
 .main-section #right-section .new-articles .line {
   color: hsl(233, 8%, 79%);
 }
-@media (max-width: 960px) {
+@media (max-width: 970px) {
   .main-section {
     flex-direction: column;
   }
@@ -99,10 +103,30 @@
     width: 100%;
     align-items: flex-start;
     justify-content: center;
-    padding: 30px 0px 30px 0px;
+    padding: 30px 0px 40px 0px;
   }
   .main-section #right-section .new-articles {
     width: 100%;
-    height: 320px;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+@media (max-width: 730px) {
+  .main-section #left-section #web-3-desktop {
+    display: none;
+  }
+  .main-section #left-section #web-3-mobile {
+    display: block;
+  }
+  .main-section #left-section #bottom-section #bottom-title {
+    padding: 0;
+  }
+  .main-section #left-section #bottom-section #bottom-title h1 {
+    line-height: 1;
+    font-size: 34px;
+  }
+  .main-section #left-section #bottom-section #bottom-description {
+    position: relative;
+    top: -25px;
   }
 }/*# sourceMappingURL=mainSectionStyles.css.map */

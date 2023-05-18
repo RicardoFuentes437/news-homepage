@@ -23,4 +23,17 @@
 }
 .navbar #navbar-links li:hover {
   color: hsl(5, 85%, 63%);
+}
+.navbar .drawer .icon-menu {
+  width: auto;
+  height: auto;
+  border: none;
+  cursor: pointer;
+}
+
+.list-item {
+  cursor: pointer;
+}
+.list-item:hover {
+  color: hsl(5, 85%, 63%);
 }/*# sourceMappingURL=navbarStyles.css.map */

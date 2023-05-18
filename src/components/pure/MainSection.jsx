@@ -7,6 +7,7 @@ const MainSection = () => {
         <div className='main-section'>
             <div id="left-section">
                 <img src="images/image-web-3-desktop.jpg" alt="web-3-desktop" id="web-3-desktop"></img>
+                <img src="images/image-web-3-mobile.jpg" alt="web-3-desktop" id="web-3-mobile"></img>
                 <div id="bottom-section">
                     <div id='bottom-title'>
                         <h1>The Bright Future of Web 3.0?</h1>

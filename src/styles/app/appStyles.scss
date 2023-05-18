@@ -1,3 +1,4 @@
+@use '../variables' as v;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
 
 html, body, #root{
@@ -13,12 +14,26 @@ html, body, #root{
         height: 100%;
     }
 
+    .attribution{
+        padding: 20px 5px 20px 5px;
+        font-size: 15px;
+    }
+
     @media (max-width: v.$size-screen) {
         height: fit-content;
 
         .main-app{
             width: 80%;
             height: fit-content;
+            margin: auto;
         }
     }
+
+    @media (max-width: v.$size-screen-3) {
+
+        .main-app{
+            width: 90%
+        }
+    }
+
 }

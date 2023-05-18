@@ -14,23 +14,27 @@
 
     @media (max-width: v.$size-screen) {
         display: grid;
-        grid-template-areas: 
-            "one two"
-            "three three";
-
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
 
         #card-01{
-            grid-area: "one";
+            grid-column: 1;
+            grid-row: 1;
         }
 
         #card-02{
-            grid-area: "two";
+            grid-column: 2;
+            grid-row: 1;
         }
 
         #card-03{
-            grid-area: "three";
+            grid-column: 1;
+            grid-row: 2;
         }
+    }
+
+    @media (max-width: v.$size-screen-2) {
+        display: flex;
+        flex-direction: column;
     }
 }

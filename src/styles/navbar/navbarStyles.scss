@@ -29,4 +29,21 @@
             }
         }
     }
+
+    .drawer{
+        .icon-menu{
+            width: auto;
+            height: auto;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.list-item{
+    cursor: pointer;
+    
+    &:hover{
+        color: v.$Soft-red;
+    }
 }

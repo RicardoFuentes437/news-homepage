@@ -11,7 +11,11 @@ html .main-app, body .main-app, #root .main-app {
   width: 950px;
   height: 100%;
 }
-@media (max-width: 920px) {
+html .attribution, body .attribution, #root .attribution {
+  padding: 20px 5px 20px 5px;
+  font-size: 15px;
+}
+@media (max-width: 970px) {
   html, body, #root {
     height: -moz-fit-content;
     height: fit-content;
@@ -20,5 +24,11 @@ html .main-app, body .main-app, #root .main-app {
     width: 80%;
     height: -moz-fit-content;
     height: fit-content;
+    margin: auto;
+  }
+}
+@media (max-width: 730px) {
+  html .main-app, body .main-app, #root .main-app {
+    width: 90%;
   }
 }/*# sourceMappingURL=appStyles.css.map */

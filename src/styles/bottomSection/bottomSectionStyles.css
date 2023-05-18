@@ -9,20 +9,28 @@
   font-size: 15px;
   color: hsl(236, 13%, 42%);
 }
-@media (max-width: 960px) {
+@media (max-width: 970px) {
   .bottom-section {
     display: grid;
-    grid-template-areas: "one two" "three three";
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
   .bottom-section #card-01 {
-    grid-area: "one";
+    grid-column: 1;
+    grid-row: 1;
   }
   .bottom-section #card-02 {
-    grid-area: "two";
+    grid-column: 2;
+    grid-row: 1;
   }
   .bottom-section #card-03 {
-    grid-area: "three";
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+@media (max-width: 880px) {
+  .bottom-section {
+    display: flex;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=bottomSectionStyles.css.map */

@@ -38,4 +38,8 @@
         width: 350px;
         padding-bottom: 15px;
     }
+
+    @media (max-width: v.$size-screen-2) {
+        width: 100%;
+    }
 }
